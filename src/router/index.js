@@ -1,8 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Main from '../page/main.vue'
-import Tool from "../page/tool.vue"
-import My from "../page/my.vue"
+import Main from '../pages/main.vue'
+import Tool from "../pages/tool.vue"
+import My from "../pages/my.vue"
 
 Vue.use(Router)
 

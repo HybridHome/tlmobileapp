@@ -21,7 +21,7 @@
             selected: 'main',
             img1: "static/home_selected.png",
             img3: "static/tool.png",
-            img5: "src/assets/logo.png"
+            img5: "static/user.png"
         }
      },
      computed: {
