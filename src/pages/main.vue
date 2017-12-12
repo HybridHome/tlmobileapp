@@ -1,6 +1,6 @@
 <template>
   <div id="index">
-    <mt-header fixed title="首页"></mt-header>
+    <mt-header fixed title="首页" style="height: 64px;"></mt-header>
     <div class="content">
       <mt-cell-swipe
         :right="right"
@@ -13,7 +13,7 @@
 
 <style scoped>
   .content{
-    margin-top: 40px;
+    margin-top: 64px;
   }
 </style>
 

@@ -1,6 +1,6 @@
 <template>
   <div id="mine">
-    <mt-header fixed title="个人中心"></mt-header>
+    <mt-header fixed title="个人中心"  style="height: 64px;"></mt-header>
     <div class="content">
       <div class="user-head">
         <div class="user-img" @click="goMyInfo">
@@ -29,7 +29,7 @@
 <style scoped>
 
   .content {
-    margin-top: 40px;
+    margin-top: 64px;
     display: flex;
     flex-direction: column;
   }

@@ -1,6 +1,6 @@
 <template>
   <div id="memo">
-    <mt-header fixed title="我的备忘">
+    <mt-header fixed title="我的备忘" style="height: 64px;">
       <router-link to="/tool/memolist" slot="left">
         <mt-button icon="back">返回</mt-button>
       </router-link>
@@ -27,7 +27,7 @@
 
 <style scoped>
   .content {
-    margin-top: 40px;
+    margin-top: 64px;
   }
 
   .mint-cell {

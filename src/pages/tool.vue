@@ -1,7 +1,7 @@
 <template>  
   <div id="tool">
     <!-- 头部 -->
-    <mt-header fixed title="应用中心"></mt-header>
+    <mt-header fixed title="应用中心" style="height: 64px;"></mt-header>
     <!-- 内容区域 -->
     <div class="content">
       <!-- 图片轮播展示 -->
@@ -52,7 +52,7 @@
   }
 
   .content {
-    margin-top: 40px;
+    margin-top: 64px;
     text-align: left;
   }
 

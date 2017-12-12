@@ -1,6 +1,6 @@
 <template>
   <div id="loadmore">
-    <mt-header fixed title="Loadmore">
+    <mt-header fixed title="Loadmore" style="height: 64px;">
       <router-link to="/tool" slot="left">
         <mt-button icon="back">返回</mt-button>
       </router-link>
@@ -24,7 +24,7 @@
 </template>
 <style scoped>
   .content {
-    margin-top: 40px;
+    margin-top: 64px;
     height: auto;
   }
 </style>

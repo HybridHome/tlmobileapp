@@ -1,6 +1,6 @@
 <template>
   <div class="my-info">
-    <mt-header fixed title="我的个人信息">
+    <mt-header fixed title="我的个人信息" style="height: 64px;">
       <router-link to="/mine" slot="left">
         <mt-button icon="back">返回</mt-button>
       </router-link>
@@ -38,7 +38,7 @@
 
 <style scoped>
   .content {
-    margin-top: 40px;
+    margin-top: 64px;
     margin-left: 15px;
     margin-right: 15px;
   }

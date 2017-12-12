@@ -1,6 +1,6 @@
 <template>
   <div id="memo-list">
-    <mt-header fixed title="我的备忘列表">
+    <mt-header fixed title="我的备忘列表" style="height: 64px;">
       <router-link to="/tool" slot="left">
         <mt-button icon="back">返回</mt-button>
       </router-link>
@@ -19,7 +19,7 @@
 
 <style scoped>
   .content {
-    margin-top: 40px;
+    margin-top: 64px;
   }
 
   span {

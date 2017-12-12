@@ -1,6 +1,6 @@
 <template>
   <div id="chart">
-    <mt-header fixed title="统计图表">
+    <mt-header fixed title="统计图表" style="height: 64px;">
       <router-link to="/tool" slot="left">
         <mt-button icon="back">返回</mt-button>
       </router-link>
@@ -17,7 +17,7 @@
 </template>
 <style>
   .chart-container {
-    margin-top: 40px;
+    margin-top: 64px;
     display: flex;
   }
 </style>
@@ -71,7 +71,7 @@
           legend: {
             x: 'center',
             data:['第一季度','第二季度'],
-            top:50,
+            top:80,
             selectedMode: 'multiple',
           },
           xAxis: {
@@ -79,7 +79,7 @@
           },
           grid:{
             show:true,
-            top:80,//grid 组件离容器上侧的距离,默认60;上同
+            top:110,//grid 组件离容器上侧的距离,默认60;上同
           },
           yAxis: {},
           series: [{
