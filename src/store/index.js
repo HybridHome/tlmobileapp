@@ -1,13 +1,13 @@
-import Vue from "vue";
-import Vuex from "vuex";
-import * as types from "./mutation-types";
+import Vue from 'vue'
+import Vuex from 'vuex'
+import * as types from './mutation-types'
 
-Vue.use(Vuex);
+Vue.use(Vuex)
 
 const store = new Vuex.Store({
     state: {
         footerVisible: true,
-        selectedTab: "main"
+        selectedTab: 'main'
     },
     mutations: {
         [types.TOGGLE_FOOTER](state) {
