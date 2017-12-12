@@ -71,7 +71,7 @@
           legend: {
             x: 'center',
             data:['第一季度','第二季度'],
-            top:80,
+            top:100,
             selectedMode: 'multiple',
           },
           xAxis: {
@@ -79,7 +79,7 @@
           },
           grid:{
             show:true,
-            top:110,//grid 组件离容器上侧的距离,默认60;上同
+            top:130,//grid 组件离容器上侧的距离,默认60;上同
           },
           yAxis: {},
           series: [{

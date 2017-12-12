@@ -56,6 +56,8 @@
 
   .user-option {
     background-color: #dbdbdb;
+    margin-left: 15px;
+    margin-right: 15px;
   }
 
   .mint-cell {
