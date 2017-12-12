@@ -7,7 +7,7 @@
       <mt-tab-item id="tool">
         <img :src="img3" slot="icon">应用中心
       </mt-tab-item>
-      <mt-tab-item id="mime">
+      <mt-tab-item id="mine">
         <img :src="img5" slot="icon">我的
       </mt-tab-item>
     </mt-tabbar>
@@ -44,8 +44,8 @@
           } else {
             this.img3 = 'static/tool.png'
           }
-          if (this.selected == "mime") {
-            this.$router.push('/mime')
+          if (this.selected == "mine") {
+            this.$router.push('/mine')
             this.img5 = "static/user_selected.png";
           } else {
             this.img5 = "static/user.png";

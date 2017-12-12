@@ -16,7 +16,7 @@ const express = require('express')
 const app = express()
 var appData = require('../mock/data.json')
 var users = appData.users;
-var mime = appData.mime;
+var mine = appData.mine;
 var apiRoutes = express.Router()
 app.use('/api', apiRoutes)
 
@@ -47,10 +47,15 @@ const devWebpackConfig = merge(baseWebpackConfig, {
             poll: config.dev.poll
         },
         before(app) {
-            app.get('/api/mime', (req, res) => {
+            app.get("/api/users", (req, res) => {
                 res.json({ // 这里是你的json内容
                     errno: 0,
-                    data: mime
+                    data: users
+                });
+            }), app.get("/api/mine", (req, res) => {
+                res.json({ // 这里是你的json内容
+                    errno: 0,
+                    data: mine
                 });
             });
         }
