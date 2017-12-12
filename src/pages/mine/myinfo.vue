@@ -35,9 +35,12 @@
 
   </div>
 </template>
+
 <style scoped>
   .content {
     margin-top: 40px;
+    margin-left: 15px;
+    margin-right: 15px;
   }
 
   .mint-cell {
@@ -47,6 +50,7 @@
     font-size: 13px;
   }
 </style>
+
 <script>
   import axios from 'axios';
 
