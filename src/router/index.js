@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Main from '../pages/main.vue'
 import Tool from "../pages/tool.vue"
-import My from "../pages/my.vue"
+import Mime from "../pages/mime.vue"
 
 Vue.use(Router)
 
@@ -20,8 +20,8 @@ export default new Router({
             component: Tool
         },
         {
-            path: "/my",
-            component: My
+            path: "/mime",
+            component: Mime
         }
     ]
 });
