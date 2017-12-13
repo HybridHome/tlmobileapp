@@ -43,6 +43,10 @@ module.exports = {
             /**禁用掉eslint的代码检查*/
             /*...(config.dev.useEslint ? [createLintingRule()] : []),*/
             {
+                test: /\.json$/,
+                loader: "json"
+            },
+            {
                 test: /\.vue$/,
                 loader: "vue-loader",
                 options: vueLoaderConfig

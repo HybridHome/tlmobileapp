@@ -58,7 +58,15 @@
     data(){
       return {
         my: {
-          name: 'aa'
+          name: "周三",
+          age: 30,
+          gender: "男",
+          job: "开发工程师",
+          level: "T6",
+          address: "上海市浦东新区",
+          tel: "18866668888",
+          joinDate: "2016-09-12",
+          dept: "TECH·移动一组"
         }
       }
     },

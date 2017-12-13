@@ -9,6 +9,7 @@
 
 <script>
   import Footer from './components/FooterBar.vue'
+  
   export default {
     name: 'app',
     components: {

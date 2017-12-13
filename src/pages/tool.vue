@@ -18,28 +18,25 @@
       <!-- 应用展示 -->
       <div class="apps">
         <div @click="go('chart',$event)">
-          <img src="static/chart.png"/>
+          <img src="../assets/common/chart.png"/>
           <span>业务统计</span>
         </div>
-        <!--<div @click="go('bed',$event)">
-          <img src="static/bed.ico"/>
-          <span>住宿申请</span>
-        </div>
-        <div @click="go('hr',$event)">
-          <img src="static/hr.png"/>
-          <span>资源查询</span>
-        </div>-->
         <div @click="go('loadmore',$event)">
-          <img src="static/data.png"/>
+          <img src="../assets/common/data.png"/>
           <span>测试数据</span>
         </div>
         <div @click="go('memolist',$event)">
-          <img src="static/note.png"/>
+          <img src="../assets/common/note.png"/>
           <span>我的备忘</span>
         </div>
-        <div></div>
-        <div></div>
-        <div></div>
+        <div @click="developing('住宿申请')">
+          <img src="../assets/common/bed.png"/>
+          <span>住宿申请</span>
+        </div>
+        <div @click="developing('资源查询')">
+          <img src="../assets/common/hr.png"/>
+          <span>资源查询</span>
+        </div>
       </div>
     </div>
   </div>
@@ -104,7 +101,9 @@
   }
 </style> 
 
-<script>  
+<script>
+  import { MessageBox } from 'mint-ui';
+
   export default {
     methods: {
       handleChange() {
@@ -112,6 +111,9 @@
       },
       go(index, $event) {
         this.$router.push('/tool/' + index);
+      },
+      developing(title) {
+        MessageBox(title, '敬请期待...');
       }
     },
     created(){

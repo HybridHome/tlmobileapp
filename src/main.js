@@ -6,18 +6,26 @@ import router from './router'
 import MintUI from 'mint-ui'
 import store from './store/index.js'
 import echarts from 'echarts'
+import "mint-ui/lib/style.css"
 
 Vue.prototype.$echarts = echarts
 
 Vue.use(MintUI)
 
-// Vue.config.productionTip = false
+Vue.config.productionTip = false
 
 /* eslint-disable no-new */
+if ("addEventListener" in document) {
+    document.addEventListener("deviceready", function() {
+        FastClick.attach(document.body);
+        window.navigator.splashscreen.hide();
+    }, false);
+};
+
 new Vue({
-    el: '#app',
+    el: "#app",
     router,
     store,
-    template: '<App/>',
+    template: "<App/>",
     components: { App }
-})
+});
