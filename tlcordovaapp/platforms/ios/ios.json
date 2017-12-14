@@ -8,7 +8,7 @@
   },
   "installed_plugins": {
     "cordova-plugin-whitelist": {
-      "PACKAGE_NAME": "com.tridon.lee"
+      "PACKAGE_NAME": "net.tridonlee.tlcordovaapp"
     }
   },
   "dependent_plugins": {},

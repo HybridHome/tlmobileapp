@@ -1,6 +1,6 @@
 {
-  "name": "com.tridon.lee",
-  "displayName": "cordovaapp",
+  "name": "net.tridonlee.tlcordovaapp",
+  "displayName": "tlcordovaapp",
   "version": "1.0.0",
   "description": "A sample Apache Cordova application that responds to the deviceready event.",
   "main": "index.js",
@@ -9,18 +9,16 @@
   },
   "author": "Apache Cordova Team",
   "license": "Apache-2.0",
+  "dependencies": {
+    "cordova-ios": "^4.5.4",
+    "cordova-plugin-whitelist": "^1.3.3"
+  },
   "cordova": {
     "plugins": {
       "cordova-plugin-whitelist": {}
     },
     "platforms": [
-      "ios",
-      "android"
+      "ios"
     ]
-  },
-  "dependencies": {
-    "cordova-plugin-whitelist": "^1.3.3",
-    "cordova-ios": "~4.5.4",
-    "cordova-android": "~6.3.0"
   }
 }
